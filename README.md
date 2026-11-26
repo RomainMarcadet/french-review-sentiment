@@ -1,12 +1,12 @@
 # Shirin
-Projet end-to-end Master NLP
+Projet de Master NLP autour de la classification d'avis en français et de la génération de réponses. Le pipeline décrit ci-dessous utilise TF-IDF, une régression logistique, une API FastAPI et Mistral ; le déploiement Azure fait partie des objectifs du projet.
 
 Construire un pipeline complet :
 
 1. Entraîner un modèle de classification d'avis (positif / négatif) et générer des réponses personnalisées aux avis négatifs via un modèle de Mistral.  
 2. Créer un DataFrame final contenant : avis client, étiquette (positif / négatif), adresse mail, réponse générée.  
 3. Utiliser de bonnes pratiques de structuration (4 fichiers Python principaux) et une API propre.  
-4. Déployer une API FastAPI sur Azure avec CI/CD.
+4. Préparer un déploiement de l'API FastAPI sur Azure avec CI/CD.
 
 ---
 
@@ -58,7 +58,7 @@ Un script Gradio (`notebooks/gradio_ui.py`) permet de tester facilement l'API.
 ### 1. Cloner le projet et créer l'environnement
 
 ```bash
-git clone https://github.com/<ton_compte>/Shirin.git
+git clone https://github.com/RomainMarcadet/Shirin.git
 cd Shirin
 python -m venv .venv
 .\.venv\Scripts\activate  # sous Windows
