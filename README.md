@@ -58,8 +58,8 @@ Un script Gradio (`notebooks/gradio_ui.py`) permet de tester facilement l'API.
 ### 1. Cloner le projet et créer l'environnement
 
 ```bash
-git clone https://github.com/RomainMarcadet/Shirin.git
-cd Shirin
+git clone https://github.com/RomainMarcadet/french-review-sentiment.git
+cd french-review-sentiment
 python -m venv .venv
 .\.venv\Scripts\activate  # sous Windows
 pip install -r requirements.txt
@@ -224,7 +224,7 @@ Pour une démo rapide, `notebooks/gradio_ui.py` fournit une interface web simple
 1. Lancer l'API dans un premier terminal :
 
 ```bash
-cd Shirin
+cd french-review-sentiment
 .\.venv\Scripts\activate
 uvicorn api:app --reload
 ```
@@ -232,7 +232,7 @@ uvicorn api:app --reload
 2. Lancer l'interface Gradio dans un second terminal :
 
 ```bash
-cd Shirin\notebooks
+cd french-review-sentiment\notebooks
 .\.venv\Scripts\activate
 python gradio_ui.py
 ```
